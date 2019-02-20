@@ -1,0 +1,19 @@
+spring:
+  profiles: minimal
+acme:
+  name: test-name
+  enabled: true
+---
+spring:
+  profiles: full
+acme:
+  name: test-name
+  enabled: true
+  security:
+    password: veryunknown
+    levels: upper,echelon
+---
+spring:
+  profiles: invalid
+acme:
+  enabled: true
